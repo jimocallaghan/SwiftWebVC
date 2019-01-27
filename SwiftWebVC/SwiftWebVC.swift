@@ -84,8 +84,8 @@ public class SwiftWebVC: UIViewController {
     deinit {
         webView.stopLoading()
         UIApplication.shared.isNetworkActivityIndicatorVisible = false
-//        webView.uiDelegate = nil;
-//        webView.navigationDelegate = nil;
+        webView.uiDelegate = nil;
+        webView.navigationDelegate = nil;
     }
     
     public convenience init(urlString: String, sharingEnabled: Bool = true) {
